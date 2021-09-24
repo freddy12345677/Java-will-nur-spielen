@@ -1,15 +1,28 @@
 
 public class während_schleife {
+	 static void test (int a, int b) {	
+		 if(b < a) { System.out.println("a ist groesser");}
+		 
+		 
+		 
+	 }
 public static void main (String[]arg) {
-int i = 1;
-int i1 = 11;
+	
+	
 
-
-while (i < 11 ) {
-System.out.println("durchlauf");
-i ++;
-}	
-
-System.out.println("done");
+	
+	
+	test(10,1);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 }

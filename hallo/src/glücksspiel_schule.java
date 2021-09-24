@@ -1,6 +1,6 @@
 
 public class glücksspiel_schule {
-	static byte alter = 19;
+	static byte alter = 16;
 	static String Name = "Freddy";
 	static byte geschlecht = 1;
 
@@ -20,7 +20,7 @@ System.out.print("du hast ");
 if (randomValue <= 0.43){System.out.println("gewonnen");}
 else {System.out.println("verloren ");
 }
-}else if(alter < 16) {System.out.println("nicht das ausreichende Alter");}
+}else if(alter < 18) {System.out.println("Sie haben nicht das ausreichende Alter");}
 }
 	
 
