@@ -12,7 +12,7 @@ public class Vertex {
 	 
 	 return "x ="+x+", y ="+y;
 	 
-	 
+	 //oiwjdapowidj
 	 
      }
  }
