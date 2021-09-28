@@ -6,6 +6,7 @@ public class TestVertex {
 		Vertex v1 = new Vertex(17, 4);
 		Vertex v2 = new Vertex(42, 0); 
 		Vertex v3 = v1.skalarMult(42.42);
+		Vertex katze = new Vertex(1,1);
 		
 		System.out.println(v2);
 		System.out.println(v1);
@@ -15,3 +16,4 @@ public class TestVertex {
 	}
 
 }
+//awdoiuf
