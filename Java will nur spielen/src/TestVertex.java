@@ -33,7 +33,7 @@ public class TestVertex {
 		System.out.println(v1.add(v2));
 		System.out.println(v2);
 		System.out.println(v1.equals(v2));
-		System.out.println(v2.equals(v3));
+		System.out.println(v2.equals(v3));//
 		System.out.println(v2.equals(v4));
 		System.out.println(v2.equals(v2)); //ausgabe das was in den operatoren oder funktionen kp genau was da returnt wird
 		
