@@ -3,6 +3,7 @@ public class Vertex {
 
 	public double x;             //
 	public double y;
+	
 
 	public Vertex(double x, double y) { //constructor entweder public oder void und dann direkt der Name
 		this.x = x;
@@ -18,7 +19,7 @@ public class Vertex {
 
 	}
 	
-	public double length() {
+	public double length() {   //das ist eine Methode 
 		return Math.sqrt(x*x+y*y);
 		
 	}
@@ -41,6 +42,29 @@ public class Vertex {
 	return new Vertex(x+v2.x, y+v2.y);	
 		
 	}
+	
+	public Vertex sub(Vertex v2) {
+		
+		return new Vertex(x-v2.x, y-v2.y);
+	
+	}
+	public double distance(Vertex v2){
+		double a = v2.x - this.x;
+		double b = v2.y - this.y;
+		return Math.sqrt(a * a + b * b);
+			
+	}
+	
+	public void normalize() {
+		double factor = this.length();
+		x=x/factor;
+		y=y/factor;
+		
+		
+		
+		
+	}
+	
 	public void addMod(Vertex v2) {
 		
 	x=x+v2.x;
@@ -48,4 +72,35 @@ public class Vertex {
 		
 		
 	}
+	
+	public void setX(double x) {
+		
+		this.x = x;
+	}
+	
+	public void setY(double y) {
+		
+		this.y = y;
+		
+	}
+	public double getX() {
+		
+		return x;
+	}
+	public double getY() {
+		
+		
+		return y;
+	}
+	public boolean equals(Object thatObject) {
+		if(thatObject  instanceof Vertex) {
+			Vertex that = (Vertex)thatObject;
+			return this.x==that.x && this.y==that.y;
+			
+		}
+			return false ;
+	}
+	
+	
 }
+
