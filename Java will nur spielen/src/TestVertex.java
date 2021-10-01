@@ -31,7 +31,7 @@ public class TestVertex {
 		System.out.println(v1.skalarMult(0.8));
 		System.out.println(v1);
 		System.out.println(v1.add(v2));
-		System.out.println(v2);
+		System.out.println(v2);//
 		System.out.println(v1.equals(v2));
 		System.out.println(v2.equals(v3));
 		System.out.println(v2.equals(v4));
