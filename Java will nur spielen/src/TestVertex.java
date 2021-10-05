@@ -1,3 +1,24 @@
+//------------------------Functions-------------------------------------
+//1. public "rückgabe-wert[möglichkeiten: void,String,int,...]" "Funktionsname" ("mitgabe wert1","mitgabe Wert2","...",){
+//function)
+//}
+
+//2. private "rückgabe-wert[möglichkeiten: void,String,int,...]" "Funktionsname" ("mitgabe wert1","mitgabe Wert2","...",){
+//function)
+//}
+
+//public = jeder kann zugreifen
+//private = nur du kannst zugreifen (nicht eine andere klasse, nur die in der der Code steht)
+//------------------------Functions-------------------------------------
+
+
+
+
+
+
+
+
+
 
 public class TestVertex {
 
