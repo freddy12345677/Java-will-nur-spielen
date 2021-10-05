@@ -43,6 +43,6 @@ public class GeometricObject {
 		this(10);
 	}
 	public String toString() {
-		return "width =" + width //hier fehlt etwas nachholen schaue teams
+		return "width =" + width //hier fehlt etwas nachholen schaue team
 	}
 }
