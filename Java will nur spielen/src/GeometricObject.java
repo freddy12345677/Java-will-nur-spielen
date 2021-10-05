@@ -36,7 +36,7 @@ public class GeometricObject {
 		this(width, height, new Vertex(0, 0));
 	}
 
-	public GeometricObject(double w) {
+	public GeometricObject(double w) {//awd
 		this(w, w);
 	}
 	public GeometricObject() {
