@@ -1,14 +1,14 @@
 //
 public class GeometricObject {
 
-	public double width;
-	public double height;
 	public Vertex pos;
+	public double height;
+	public double width;
 
 	public GeometricObject(double width, double height, Vertex pos) {
-		this.height = height;
-		this.width = width;
 		this.pos = pos;
+		this.width = width;
+		this.height = height;
 
 		if (width < 0) {
 			width = -width;
@@ -18,6 +18,30 @@ public class GeometricObject {
 			height = -height;
 			pos.y = pos.y - height;
 		}
+	}
+
+	public GeometricObject(double width, double height) {
+		this(width, height, new Vertex(0, 0));
+	}
+
+	public GeometricObject(double w) {
+		this(w, w);
+	}
+
+	public GeometricObject() {
+		this(10);
+	}
+
+	public String toString() {
+		return "width= " + width + ", height= " + height + ", pos= " + pos;
+	}
+
+	public double circumference() {
+		return 2 * (width + height);
+	}
+
+	public double area() {
+		return width * height;
 	}
 
 	public double getWidth() {
@@ -32,17 +56,31 @@ public class GeometricObject {
 		return pos;
 	}
 
-	public GeometricObject(double width, double height) {
-		this(width, height, new Vertex(0, 0));
+	public boolean isLargerThan(GeometricObject that) {
+		return this.area() > that.area();
+
 	}
 
-	public GeometricObject(double w) {//awd
-		this(w, w);
+	public void moveTo(Vertex pos) {
+		this.pos = pos;
 	}
-	public GeometricObject() {
-		this(10);
+
+	public void moveTo(double x, double y) {
+        moveTo(new Vertex(x,y));
 	}
-	public String toString() {
-		return "width =" + width //hier fehlt etwas nachholen schaue team
+	public void move(Vertex v) {
+		moveTo(pos.add(v));
 	}
+	
+	public boolean equals(Object thatObject) {
+		if(thatObject instanceof GeometricObject) {
+			GeometricObject that = (GeometricObject)thatObject;
+			return that.width== this.width 
+					&& that.height== this.height 
+					&& this.pos.equals(that.pos);
+					
+		}
+		return false;
+	}
+
 }
