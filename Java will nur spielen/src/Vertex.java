@@ -33,7 +33,7 @@ public class Vertex {
 	public void skalarMultMod(double s){
 		
 	x =s*x;
-	y =s*y;//
+	y =s*y;
 		
 		
 	}
