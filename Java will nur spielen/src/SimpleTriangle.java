@@ -28,3 +28,4 @@ public class SimpleTriangle extends GeometricObject {
 
 
 }
+//
