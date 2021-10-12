@@ -9,14 +9,20 @@ public class SimpleOval extends GeometricObject {
 		super(w, h, new Vertex(x, y));
 
 	}
-	@Override public double area() {
-		return Math.PI*height*width/4;
+
+	@Override
+	public double area() {
+		return Math.PI * height * width / 4;
 	}
-	@Override public String toString() {
-		return "SimpleOval ("+super.toString()+")";
+
+	@Override
+	public String toString() {
+		return "SimpleOval (" + super.toString() + ")";
 	}
-	@Override public boolean equals(Object that){
+
+	@Override
+	public boolean equals(Object that) {
 		return (that instanceof SimpleOval) && super.equals(that);
 	}
-	
+    
 }

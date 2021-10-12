@@ -13,7 +13,8 @@ public class SimpleRectangle extends GeometricObject {
 
 	@Override
 	public double area() {
-		return Math.PI * height * width / 4;
+		
+		return height * width;
 	}
 
 	@Override
