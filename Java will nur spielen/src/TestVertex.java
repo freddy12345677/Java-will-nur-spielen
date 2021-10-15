@@ -12,25 +12,38 @@
 //------------------------Functions-------------------------------------
 
 
+//GIT TOKEN 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
 
 
 
 
 
-
-
+import javax.swing.JFrame;
 
 public class TestVertex {
 
 	public static void main(String[] args) {
-		String s1 = "hallo";
-		String s2 = "hallO".toLowerCase();
-	Vertex v1 = new Vertex(17, 4);   //das sind alles OBjekte
-		Vertex v2 = new Vertex(42, 23); 
-		Vertex v3 = new Vertex(0, 0);
-		Vertex v4 = new Vertex(42, 23);
 		
 		
+		
+		
+		JFrame f = new JFrame ("mein erstes rechteck");
+		f.add(new FirstPanel());	
+	
+		f.setVisible(true);
+		
+		
+		
+		
+		//		String s1 = "hallo";
+		//		String s2 = "hallO".toLowerCase();
+		//	Vertex v1 = new Vertex(17, 4);   //das sind alles OBjekte
+		//		Vertex v2 = new Vertex(42, 23); 
+		//		Vertex v3 = new Vertex(0, 0);
+		//		Vertex v4 = new Vertex(42, 23);
+		//		SimpleOval ov1 = new SimpleOval(17,4, new Vertex(42,23));
+	//	SimpleRectangle r1 = new SimpleRectangle(17,4,56,100);
+	//	SimpleRectangle r2 = new SimpleRectangle(17,4,56,100);
 //		//
 //		Vertex katze = new Vertex(1,1);
 //		Vertex v5 = v1.skalarMult(42.42);
@@ -61,17 +74,18 @@ public class TestVertex {
 //		
 //		System.out.println("distance "+ v2.distance(v1));
 //		
-		System.out.println("get X " + v2.getX());
-		GeometricObject o1 = new GeometricObject(17,4, new Vertex(42,23));
-		GeometricObject o2 = new GeometricObject(17,4);
-		GeometricObject o3 = new GeometricObject(17);
-		GeometricObject o4 = new GeometricObject();
-		
-		System.out.println(o1.equals(o2));
-		o2.moveTo(42, 23);
-		System.out.println(o1.equals(o2));
-		System.out.println(o4);
-		System.out.println(o3.contains(new Vertex(10,3)));
+	//	System.out.println("get X " + v2.getX());
+		//	GeometricObject o1 = new GeometricObject(17,4, new Vertex(42,23));
+		//		GeometricObject o2 = new GeometricObject(17,4);
+		//	GeometricObject o3 = new GeometricObject(17);
+		//		GeometricObject o4 = new GeometricObject();
+		//		
+		//		System.out.println(o1.equals(o2));
+		//	o2.moveTo(42, 23);
+		//	System.out.println(o1.equals(o2));
+		//	System.out.println(o4);
+		//	System.out.println(o3.contains(new Vertex(10,3)));
+		//	System.out.println(r1.contains(v1));
 	}
 
 }

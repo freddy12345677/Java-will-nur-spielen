@@ -18,7 +18,7 @@ public class SimpleTriangle extends GeometricObject {
 
 		@Override
 		public String toString() {
-			return "SimpleTriangle (" + super.toString() + ")";a
+			return "SimpleTriangle (" + super.toString() + ")";
 		}
 
 		@Override
