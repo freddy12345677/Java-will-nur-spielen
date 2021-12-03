@@ -33,7 +33,7 @@ public class Counter extends SimpleButton{
 				l.setText("0");
 				}
 		}
-	);//(
+	);//
 }
 
 	public static void main(String[] args) {
